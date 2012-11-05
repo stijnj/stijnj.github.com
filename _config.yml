@@ -1,0 +1,6 @@
+markdown: redcarpet
+pygments: true
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+exclude: sass/

@@ -1,0 +1,97 @@
+$baseFontFamily: 'Arial';
+$headingsFontFamily: Source Sans Pro, Arial, sans-serif;
+$baseFontSize: 16px;
+$baseFontColor: #444;
+$headingsFontColor: #333;
+$linkColor: #00A2FF;
+
+@import "compass/css3/opacity";
+
+@import 'core/normalize.scss';
+@import 'core/h5bp.scss';
+@import 'core/helpers.scss';
+
+@import 'components/grid.scss';
+@import 'components/typography.scss';
+@import 'components/forms.scss';
+@import 'components/syntax.scss';
+@import 'components/tables.scss';
+
+body {
+    max-width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 40em) {
+    .side {
+        float: left;
+        width: 20%;
+        font-size: 0.85em;
+        line-height: 1.5em;
+    }
+
+    .content {
+        float: left;
+        width: 70%;
+        max-width: 600px;
+        margin-left: 5%;
+    }
+}
+
+.nav-main {
+    ul {
+        width: 100%;
+        padding: 0;
+        margin-top: 3em;
+        border-top: 1px solid #ddd;
+    }
+    li {
+        padding: 0.4em 0;
+        border-bottom: 1px solid #ddd;
+    }
+    a {
+        color: #666;
+        text-decoration: none;
+        border-bottom: none;
+        &:hover,
+        &:focus {
+            color: #000;
+        }
+        &:active {
+            position: relative;
+            top: 1px;
+            left: -1px;
+        }
+    }
+}
+
+.overview-item.link {
+    padding-left: 30px;
+    position: relative;
+    &:before {
+        @include opacity(0.3);
+        content: '';
+        display: block;
+        position: absolute;
+        top: 2px; left: 0;
+        width: 25px;
+        height: 100%;
+        background: transparent url(../images/link.png) no-repeat 0 0;
+    }
+}
+
+.overview-item h2 a {
+    color: inherit;
+    border-bottom: none;
+    &:hover {
+        color: $linkColor;
+    }
+}
+
+time {
+    color: #666;
+    font-size: 0.8em;
+}
+
+@import 'print.scss';

@@ -1,0 +1,67 @@
+html, body, input, textarea {
+    font: normal #{$baseFontSize}/1.5em $baseFontFamily;
+    color: $baseFontColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $headingsFontColor;
+    margin: .5em 0;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            color: $linkColor;
+        }
+    }
+}
+
+/*
+ * 32px (16px)
+ * 24px (12px)
+ */
+h1 {
+    font: bold 2em/1.2em $headingsFontFamily;
+    margin: 1em 0 .3em;
+}
+
+/*
+ * 24px (16px)
+ * 18px (12px)
+ */
+h2 {
+    font: bold 1.5em/1.2em $headingsFontFamily;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+}
+
+/*
+ * 21px (16px)
+ * 16px (12px)
+ */
+h3 {
+    font: bold 1.2em/1.2em $headingsFontFamily;
+    margin: 0.5em 0;
+    color: #666;
+    & + p { margin-top: 0; }
+}
+h4,
+h5,
+h6 {
+    font: normal 1em/1.2em $headingsFontFamily;
+}
+
+p { margin: 0.85em 0; }
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+    line-height: 1em;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba($linkColor, 0.4);
+    &:hover,
+    &:focus {
+        border-bottom-color: $linkColor;
+    }
+}
+
+hr { border-color: #999; }

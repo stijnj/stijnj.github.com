@@ -1,0 +1,12 @@
+form {
+    width: 75%;
+    .input {
+        @extend .clearfix;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+}
