@@ -1,7 +1,7 @@
 ---
 layout: default
-title: default
+title: Experiments
 ---
 
 # Experiments
-...
+- [Canvas and basic math](/experiments/canvas-ball/)
