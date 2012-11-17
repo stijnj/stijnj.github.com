@@ -7,7 +7,7 @@ title: Canvas and basic math
 
 Just a small expermiment where I wanted to play with canvas, simple math and animations. Some of the challenges in this experiment included moving the ball at a specific angle and caclulating the new angle when the ball hits one of the four walls.
 
-This experiment is very basic but open opportunities to new features like letting the balls collide or even building a small game (pong, anyone?).
+This experiment is very basic but opens opportunities to new features like letting the balls collide or even building a small game (pong, anyone?).
 
 Try it out! Click on 'add ball', then on 'start'.
 
