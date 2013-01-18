@@ -71,3 +71,7 @@ If [get_object_vars](http://php.net/manual/en/function.get-object-vars.php) is a
 
 I have no idea, do you? Feel free to add your explanation/guess in the comments!
 
+**UPDATE**
+
+On twitter [@andriesss](http://twitter.com/andriesss) pointed me to 2 bug-reports on the PHP-website: [#45959](https://bugs.php.net/bug.php?id=45959) and [#52677](https://bugs.php.net/bug.php?id=52677). These reports actually explain the situation. The bug wasn't fixed because It would decrease performance, but they updated the documentation on [Arrays](http://php.net/array#language.types.array.casting).
+
