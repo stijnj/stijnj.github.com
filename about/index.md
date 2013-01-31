@@ -13,6 +13,7 @@ The best way to learn something is to explain it to others.
 - [Modern web technologies](https://speakerdeck.com/u/inventis/p/moderne-web-technologieen-khlim) & [Social Media](https://speakerdeck.com/u/inventis/p/social-media), March/April 2012, PHL Hasselt
 
 ## Speaking
+- [Javascript: a true language, 28/11/2012, PHP Benelux meetup Mechelen](http://stijnjanssen.be/presentations/phpbenelux-nov-2012-javascript/)
 - [Pukkelpop.be, the continuous search for innovation, 27/09/2012, Microsoft Webcafé @ Hasselt](https://speakerdeck.com/u/inventis/p/pukkelpop-dot-be-the-continuous-search-for-innovation)
 - [Front-end style guides, 30/08/2012, Fronteers @ WHITE](https://speakerdeck.com/u/stijnj/p/front-end-style-guides)
 - [Front-end style guides, 06/03/2012, Fronteers @ Microsoft Belgium](https://speakerdeck.com/stijnj/front-end-style-guides-fronteers-at-microsoft-belgium)
