@@ -1,0 +1,16 @@
+{
+  "name": "stijnj.github.com",
+  "description": "stijnjanssen.be",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stijnj/stijnj.github.com.git"
+  },
+  "author": "Stijn Janssen <me@stijnjanssen.be>",
+  "license": "ISC",
+  "homepage": "http://stijnjanssen.be"
+}

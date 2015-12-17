@@ -1,6 +1,6 @@
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /posts/:title
 rdiscount:
   extensions: [smart]
-exclude: sass/
+exclude: [sass/]
