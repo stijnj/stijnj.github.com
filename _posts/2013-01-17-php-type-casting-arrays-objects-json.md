@@ -8,7 +8,7 @@ I needed a very simple API to transfer some data to another project. The easiest
 
 Let's start with the data that needs to be transfered
 
-```php?start_inline=1
+```php
 $data = array(
     '233' => array(
         'foo' => 'bar'
@@ -18,13 +18,13 @@ $data = array(
 
 Decoding this array with JSON returns this string:
 
-```php?start_inline=1
+```php
 {"233":{"foo":"bar"}}
 ```
 
 Pretty straight forward. Now it's time de docode the string.
 
-```php?start_inline=1
+```php
 object(stdClass)[1]
   public '233' =>
     object(stdClass)[2]
@@ -33,13 +33,13 @@ object(stdClass)[1]
 
 By default [json_decode](http://php.net/manual/en/function.json-decode.php) will return objects. If we would set the second paramter to <code class="prettyprint">TRUE</code> all objects will be converted to an associative array. But what would happen if we just convert the object to an array without using that second paramter?
 
-```php?start_inline=1
+```php
 $data = (array) $data;
 ```
 
 As we would expect the first object is now an array:
 
-```php?start_inline=1
+```php
 array (size=1)
   '233' =>
     object(stdClass)[2]
@@ -48,13 +48,13 @@ array (size=1)
 
 All the previous is exactly what we would expect. Things didn't go as expected when we tried to access the data in this array....
 
-```php?start_inline=1
+```php
 $decodedData['233'] // Notice: Undefined index: 233...
 ```
 
 What!? The <code class="prettyprint">var_dump</code> showed us the key but we can't access it? Let's try to verify this:
 
-```php?start_inline=1
+```php
 array_key_exists('233', $arrayData); // false
 in_array('233', array_keys($arrayData)); // true
 ```
@@ -69,7 +69,7 @@ Then there's the key we use: 233. The string is decoded to an object and numbers
 
 On the other hand when we use [get_object_vars](http://php.net/manual/en/function.get-object-vars.php) we do get an array where we can access the key '233':
 
-```php?start_inline=1
+```php
 $objectvarsData = get_object_vars($decodedData);
 var_dump($objectvarsData);
 /*
