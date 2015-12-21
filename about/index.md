@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: post
 title: About
 ---
 
-# About
 The best way to learn something is to explain it to others.
 
 ## Writing

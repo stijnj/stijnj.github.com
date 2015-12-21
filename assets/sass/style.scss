@@ -1,7 +1,7 @@
-$baseFontFamily: 'Arial';
+$baseFontFamily: 'Noto Serif', serif;
 $headingsFontFamily: Open Sans, Arial, sans-serif;
-$baseFontSize: 16px;
-$baseFontColor: #444;
+$baseFontSize: 18px;
+$baseFontColor: #333;
 $headingsFontColor: #333;
 $linkColor: #00A2FF;
 
@@ -24,16 +24,31 @@ html {
 
 body {
     font-size: 1rem;
+    line-height: 1.5;
+    font-family: $baseFontFamily;
 }
 
 h1 {
     font-size: 2rem;
+    line-height: 1.1;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    &:hover {
+        border-bottom-color: transparent;
+    }
 }
 
 .wrapper {
+    box-sizing: border-box;
     width: 100%;
+    padding: 0 20px;
 
     @media only screen and (min-width: 700px) {
+        padding: 0;
         max-width: 700px;
         margin: 0 auto;
     }
@@ -49,11 +64,18 @@ h1 {
 
     a {
         color: #ffffff;
+        border-bottom: 1px solid #ffffff;
         text-decoration: none;
         &:hover {
             color: inherit;
         }
     }
+}
+
+.hero--small {
+    min-height: 200px;
+    height: 30vh;
+    margin-bottom: 4rem;
 }
 
 .hero__title {
@@ -67,6 +89,7 @@ h1 {
 }
 
 .hero__content {
-    padding: 0 20px;
     transform: translate(-50%, -50%);
 }
+
+@import 'highlight';

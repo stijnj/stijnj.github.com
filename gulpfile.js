@@ -21,7 +21,8 @@ gulp.task('jekyll', function () {
 gulp.task('sass', function() {
     gulp.src('./assets/sass/style.scss')
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./assets/css'));
+      .pipe(gulp.dest('./assets/css'))
+      .pipe(gulp.dest('./_site/assets/css'));
 });
 
 
@@ -36,7 +37,7 @@ gulp.task('serve', function () {
 // Watch for changes
 gulp.task('watch', function () {
     // Manually compile and inject css to avoid jekyll overhead
-    gulp.watch('assets/_scss/*.scss', ['sass:dev']);
+    gulp.watch('assets/sass/*.scss', ['sass']);
 
     // Watch for changes to other files for jekyll compilation
     // Note: This will probably need to be updated with the files you want to watch
