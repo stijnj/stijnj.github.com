@@ -9,7 +9,18 @@ var EXPRESS_ROOT = '_site/'
 
 // Run Jekyll Build Asynchronously
 gulp.task('jekyll', function () {
-    var jekyll = spawn('jekyll', ['build']);
+    var jekyll = spawn(
+        'jekyll',
+        [
+            'build',
+            '-c',
+            '_config.yml,_config_local.yml',
+            '--drafts'
+        ],
+        {
+            stdio: 'inherit'
+        }
+    );
 
     jekyll.on('exit', function (code) {
         console.log('-- Finished Jekyll Build --')
