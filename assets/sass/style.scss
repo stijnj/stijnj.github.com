@@ -72,7 +72,8 @@ a {
         border-bottom: 1px solid #ffffff;
         text-decoration: none;
         &:hover {
-            color: inherit;
+            color: lighten($primary-color, 30%);
+            border-color: lighten($primary-color, 30%);
         }
     }
 

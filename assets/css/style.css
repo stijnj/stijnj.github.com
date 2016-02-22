@@ -479,7 +479,8 @@ a {
     border-bottom: 1px solid #ffffff;
     text-decoration: none; }
     .hero a:hover {
-      color: inherit; }
+      color: #84d6fd;
+      border-color: #84d6fd; }
   .hero p {
     color: #ffffff;
     margin-bottom: 0; }
