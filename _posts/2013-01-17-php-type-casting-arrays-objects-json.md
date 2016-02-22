@@ -2,10 +2,8 @@
 layout: post
 title: PHP Type Casting&#58; Arrays, Objects and JSON
 excerpt:
-    I needed a very simple API to transfer some data to another project. The easiest way is to encode the data on one side to JSON en decode it on the other side. Things didn't go as expected...
+    "I needed a very simple API to transfer some data to another project. The easiest way is to encode the data on one side to JSON en decode it on the other side. Things didn't go as expected..."
 ---
-I needed a very simple API to transfer some data to another project. The easiest way is to encode the data to JSON on one side and decode it on the other side. Things didn't go as expected...
-
 Let's start with the data that needs to be transfered
 
 ```php

@@ -16,7 +16,7 @@ $primary-color: #039be5;
 }*/
 
 html {
-    font-size: 18px;
+    font-size: 20px;
     min-width: 320px;
 
     min-height: 100%;
@@ -31,6 +31,11 @@ body {
 h1 {
     font-size: 2rem;
     line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+    font-family: $headingsFontFamily;
 }
 
 a {
@@ -70,12 +75,18 @@ a {
             color: inherit;
         }
     }
+
+    p {
+        color: #ffffff;
+        margin-bottom: 0;
+    }
 }
 
 .hero--small {
-    min-height: 200px;
-    height: 30vh;
-    margin-bottom: 4rem;
+    min-height: 30vh;
+    height: auto;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
 }
 
 .hero__title {
@@ -90,6 +101,70 @@ a {
 
 .hero__content {
     transform: translate(-50%, -50%);
+}
+
+.highlight {
+  margin: 2em 0;
+  font-size: .8rem;
+
+  table, tbody {
+    display: block;
+    width: 100%
+  }
+
+  td {
+    border: 1px solid #dee;
+  }
+
+  tr {
+    display: flex;
+    width: 100%;
+  }
+
+  .code {
+    flex: 1 0 0px;
+    margin-left: -1px;
+
+    // firefox again
+    display: block;
+    max-width: calc(100% - 2em);
+  }
+}
+
+pre {
+  padding: 10px;
+  margin: 0;
+  line-height: 23px;
+  white-space: pre;
+  overflow-x: auto;
+  word-break: inherit;
+  word-wrap: inherit;
+}
+
+.highlight .gl {
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+  color: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+p code, li code, td code {
+  color: #000000;
+  background: #fafafa;
+  padding: 3px 6px;
+  border-radius: 8px;
+  border: 1px dotted #333;
+  margin: 0 4px;
+  font-size: 90%;
+  word-wrap: break-word;
+}
+
+a code {
+  color: inherit;
+  text-decoration: underline;
+  margin: 0 -1px;
+  padding: 3px 10px;
 }
 
 @import 'highlight';
