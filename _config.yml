@@ -1,4 +1,5 @@
 environment: production
+google_verify: LVxKXzemsmQ6cX2F8DjN8cc_Dh8ta63kwAwFzFQnulI
 markdown: kramdown
 highlighter: rouge
 permalink: /posts/:title
