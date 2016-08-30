@@ -493,7 +493,6 @@ hr {
     margin-bottom: 0; }
 
 .hero--small {
-  min-height: 30vh;
   height: auto;
   padding: 2rem 0 3rem 0;
   margin-bottom: 3rem; }
@@ -520,6 +519,20 @@ hr {
   border-bottom: 0; }
   .post-list__link:hover {
     border-bottom: 1px solid #039be5; }
+
+.columns {
+  display: flex;
+  margin-bottom: 1rem; }
+
+.column {
+  flex: 1; }
+  .column:nth-child(2n) {
+    flex: 1.5; }
+
+.column__title {
+  display: block;
+  font-family: Open Sans, Arial, sans-serif;
+  font-weight: bold; }
 
 .highlight {
   margin: 2em 0;
