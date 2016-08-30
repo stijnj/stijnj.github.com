@@ -33,9 +33,9 @@ Behind the scenes the developer can add code in his preferred programming langua
 
 Let’s take a look how we can describe filling out the contact form:
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Given** there is a link ‘Contact us’ on the homepage<br />
-&nbsp;&nbsp;&nbsp;&nbsp;**When** I go to the page ‘Contact us’<br />
-&nbsp;&nbsp;&nbsp;&nbsp;**And** I fill out the contact form<br />
+&nbsp;&nbsp;&nbsp;&nbsp;**Given** there is a link ‘Contact us’ on the homepage
+&nbsp;&nbsp;&nbsp;&nbsp;**When** I go to the page ‘Contact us’
+&nbsp;&nbsp;&nbsp;&nbsp;**And** I fill out the contact form
 &nbsp;&nbsp;&nbsp;&nbsp;**Then** I see a success page
 
 Based on this description it’s clear for everyone what can be expected. The client know what he’s going to receive and we know what we need to build.

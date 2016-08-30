@@ -106,7 +106,7 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-h2 {
+h2, .post-list__title {
   font-size: 1.5em;
   margin: 0.83em 0; }
 
@@ -446,7 +446,7 @@ h1 {
   font-size: 2rem;
   line-height: 1.1; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, .post-list__title, h3, h4, h5, h6 {
   color: #039be5;
   font-family: Open Sans, Arial, sans-serif; }
 
@@ -512,7 +512,12 @@ hr {
 .post-list {
   margin-top: 3rem; }
   .post-list hr {
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    border-top: 1px solid #ccc; }
+
+.post-list__title {
+  color: #000;
+  font-weight: bold; }
 
 .post-list__link {
   color: #039be5;
